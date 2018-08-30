@@ -5,6 +5,7 @@ const UserForm = (props) => {
     <form onSubmit={props.userInfo}>
       <input type="text" name="username"></input>
       <button>Submit</button>
+      <h3>Enter Github Username</h3>
     </form>
   );
 }
