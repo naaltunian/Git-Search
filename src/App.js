@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import UserForm from './components/UserForm.js';
 import Title from "./components/Title.js";
+import Display from "./components/Display.js";
 
 // https://api.github.com/users/{user}
 
@@ -28,7 +29,15 @@ class App extends Component {
       .then((res) => {
         const repos = res.data;
         this.setState({
-          repos: repos.public_repos
+          repos: repos.public_repos,
+          name: repos.name,
+          bio: repos.bio,
+          blog: repos.blog,
+          company: repos.company,
+          email: repos.email,
+          followers: repos.followers,
+          following: repos.foloowing,
+          html_url: repos.html_url
         });
       }).catch((error) => {
         this.setState({
@@ -45,7 +54,17 @@ class App extends Component {
       <div>
         <Title />
         <UserForm userInfo={this.getUser} />
-        { this.state.repos ? <p>Number of repos: {this.state.repos}</p> : <p>Enter username</p> }
+        <Display
+            repos={this.state.repos}
+            name={this.state.name}
+            bio={this.state.bio}
+            blog={this.state.blog}
+            company={this.state.company}
+            email={this.state.email}
+            followers={this.state.followers}
+            following={this.state.following}
+            url={this.state.html_url}
+           />
       </div>
     );
   }
