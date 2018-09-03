@@ -7,7 +7,6 @@ import Display from "./components/Display.js";
 
 // https://api.github.com/users/{user}
 
-
 class App extends Component {
   state = {
     name: null,
