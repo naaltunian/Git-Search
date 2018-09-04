@@ -35,7 +35,7 @@ class App extends Component {
           company: repos.company,
           email: repos.email,
           followers: repos.followers,
-          following: repos.foloowing,
+          following: repos.following,
           html_url: repos.html_url
         });
       }).catch((error) => {
