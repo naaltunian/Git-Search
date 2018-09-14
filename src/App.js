@@ -17,7 +17,8 @@ class App extends Component {
     email: null,
     followers: null,
     following: null,
-    html_url: null
+    html_url: null,
+    avatar: null
   }
 
   getUser = (e) => {
@@ -36,7 +37,8 @@ class App extends Component {
           email: repos.email,
           followers: repos.followers,
           following: repos.following,
-          html_url: repos.html_url
+          html_url: repos.html_url,
+          avatar: repos.avatar_url
         });
         console.log(res.data);
       }).catch((error) => {
@@ -64,6 +66,7 @@ class App extends Component {
             followers={this.state.followers}
             following={this.state.following}
             url={this.state.html_url}
+            avatar={this.state.avatar}
            />
       </div>
     );
