@@ -3,6 +3,7 @@ import React from 'react';
 const Display = (props) => {
   return(
     <div>
+      {props.avatar && <img height="200px" src={props.avatar} alt="nothing"></img>}
       { props.name && <p>Name: {props.name}</p>}
       { props.url && <p>Github URL: <a href={props.url} target="_blank">{props.url}</a></p>}
       { props.email && <p>Email: {props.email}</p>}
