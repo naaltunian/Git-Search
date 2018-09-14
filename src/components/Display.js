@@ -10,8 +10,8 @@ const Display = (props) => {
       { props.company && <p>Company: {props.company}</p>}
       { props.blog && <p>Blog: <a href={props.blog} target="_blank">{props.blog}</a></p>}
       { props.repos && <p>Number of repos: {props.repos}</p>}
-      { props.followers && <p>Followers: {props.followers}</p>}
-      { props.following && <p>Following: {props.following}</p>}
+      { props.followers ? <p>Followers: {props.followers}</p> : null}
+      { props.following ? <p>Following: {props.following}</p> : null}
     </div>
   );
 }

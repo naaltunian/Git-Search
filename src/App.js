@@ -38,6 +38,7 @@ class App extends Component {
           following: repos.following,
           html_url: repos.html_url
         });
+        console.log(res.data);
       }).catch((error) => {
         this.setState({
           repos: "user not found"
