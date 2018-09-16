@@ -2,5 +2,10 @@
 .center {
   text-align: center;
   /* justify-content: center; */
+}
 
+/* UserForm */
+
+.space {
+  margin-bottom: 0.5rem;
 }
