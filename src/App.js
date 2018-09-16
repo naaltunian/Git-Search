@@ -54,7 +54,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Title />
+        <Title className="center" />
         <UserForm userInfo={this.getUser} />
         <Display
             repos={this.state.repos}

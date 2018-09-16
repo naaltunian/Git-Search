@@ -2,7 +2,7 @@ import React from 'react';
 
 const Title = () => {
   return(
-    <h1>Git-Search</h1>
+    <h1 className="center">Git-Search</h1>
   );
 }
 
