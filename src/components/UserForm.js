@@ -2,10 +2,11 @@ import React from 'react';
 
 const UserForm = (props) => {
   return(
-    <form onSubmit={props.userInfo}>
-      <input placeholder="Username" type="text" name="username"></input>
-      <button>Submit</button>
-      <h3>Enter Github Username</h3>
+    <form className="center" onSubmit={props.userInfo}>
+      <h4>Enter Github Username</h4>
+      <input className="space" placeholder="Username" type="text" name="username"></input>
+      <br></br>
+      <button className="btn btn-primary btn-sm space">Submit</button>
     </form>
   );
 }
