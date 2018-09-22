@@ -11,3 +11,4 @@ Clone the repository and run, ```npm install```. Start the server using ```npm s
 ### Future Additions
 
 - Styling the application
+- Allowing a user to search for repositories based on keywords
